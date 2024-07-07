@@ -59,6 +59,27 @@ local SwordGiver = Window:MakeTab({
 	PremiumOnly = false
 })
 
+SwordGiver:AddButton({
+	Name = "Sword give test1",
+	Callback = function()
+ 
+  	end    
+})
+
+local Player = Window:MakeTab({
+	Name = "Tools",
+	Icon = "rbxassetid://18380872766",
+	PremiumOnly = false
+})
+
+Player:AddButton({
+	Name = "JumpPower",
+	Callback = function()
+        player.Character.Humanoid.JumpPower = 100
+  	end    
+})
+
+
 local Tools = Window:MakeTab({
 	Name = "Tools",
 	Icon = "rbxassetid://18380872766",
