@@ -64,7 +64,7 @@ Grinder:AddTextbox({
 	Default = "LaggyBott",
 	TextDisappear = true,
 	Callback = function(Value)
-		print(Value)
+		local PlayerTarget = Value
 	end	  
 })
 
@@ -72,9 +72,15 @@ Grinder:AddToggle({
 	Name = "Toggle",
 	Default = false,
 	Callback = function(Value)
-		print(Value)
+		local Toggle = Value
 	end    
 })
+
+while  true do
+    if toggle == true then
+        print(PlayerTarget)
+    end
+end
 
 local SwordGiver = Window:MakeTab({
 	Name = "SwordGiver",
