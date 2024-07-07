@@ -20,11 +20,19 @@ local Teleports = Window:MakeTab({
 local Section = Teleports:AddSection({
 	Name = "Medkits"
 })
+local Medkit1Pos = "123,132,123"
+
+Teleports:AddButton({
+	Name = "WhatsPos",
+	Callback = function()
+      		print(player.Character.HumanoidRootPart.CFrame)
+  	end    
+})
 
 Teleports:AddButton({
 	Name = "Medkit1",
 	Callback = function()
-      		print("button pressed")
+        player.Character.HumanoidRootPart.CFrame = Medkit1Pos
   	end    
 })
 
