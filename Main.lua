@@ -20,40 +20,32 @@ local Teleports = Window:MakeTab({
 local Section = Teleports:AddSection({
 	Name = "Medkits"
 })
-local Medkit1Pos = "123,132,123"
-
-Teleports:AddButton({
-	Name = "WhatsPos",
-	Callback = function()
-      		print(player.Character.HumanoidRootPart.CFrame)
-  	end    
-})
 
 Teleports:AddButton({
 	Name = "Medkit1",
 	Callback = function()
-        player.Character.HumanoidRootPart.CFrame = Medkit1Pos
+
   	end    
 })
 
 Teleports:AddButton({
 	Name = "Medkit2",
 	Callback = function()
-      		print("button pressed")
+
   	end    
 })
 
 Teleports:AddButton({
 	Name = "Medkit3",
 	Callback = function()
-      		print("button pressed")
+
   	end    
 })
 
 Teleports:AddButton({
 	Name = "Medkit4",
 	Callback = function()
-      		print("button pressed")
+
   	end    
 })
 
@@ -61,6 +53,27 @@ local Grinder = Window:MakeTab({
 	Name = "Grinder",
 	Icon = "rbxassetid://18380816552",
 	PremiumOnly = false
+})
+
+local Section = Grinder:AddSection({
+	Name = "Grinder"
+})
+
+Grinder:AddTextbox({
+	Name = "PlayerName",
+	Default = "LaggyBott",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+Grinder:AddToggle({
+	Name = "Toggle",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
 })
 
 local SwordGiver = Window:MakeTab({
