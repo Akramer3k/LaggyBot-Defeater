@@ -56,7 +56,7 @@ local Grinder = Window:MakeTab({
 })
 
 local Section = Grinder:AddSection({
-	Name = "Grinder"
+	Name = "Grinder(ComingSoon)"
 })
 
 Grinder:AddTextbox({
