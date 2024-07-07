@@ -76,13 +76,6 @@ Grinder:AddToggle({
 	end    
 })
 
-while true do
-    if PlayerGrinder == true then
-        print(PlayerTarget)
-    end
-    wait(0.1)
-end
-
 local SwordGiver = Window:MakeTab({
 	Name = "SwordGiver",
 	Icon = "rbxassetid://18380872766",
