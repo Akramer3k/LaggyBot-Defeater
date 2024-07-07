@@ -29,7 +29,7 @@ Tab:AddButton({
 Tab:AddButton({
     Name = "High Jumppower",
     Callback = function()
-        player.Character.Humanoid.JumpPower = 100
+        player.Character.Humanoid.JumpPower = 250
     end
 }) --[[ Name = - The name of the button. Callback = - The function of the button. ]]
 Tab:AddButton({

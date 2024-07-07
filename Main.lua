@@ -1,5 +1,7 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
+local player = game.Players.LocalPlayer
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "LaggyBot Defeater", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
@@ -67,7 +69,7 @@ SwordGiver:AddButton({
 })
 
 local Player = Window:MakeTab({
-	Name = "Tools",
+	Name = "Player",
 	Icon = "rbxassetid://18380872766",
 	PremiumOnly = false
 })
@@ -75,10 +77,16 @@ local Player = Window:MakeTab({
 Player:AddButton({
 	Name = "JumpPower",
 	Callback = function()
-        player.Character.Humanoid.JumpPower = 100
+        player.Character.Humanoid.JumpPower = 250
   	end    
 })
 
+Player:AddButton({
+	Name = "HighSpeed",
+	Callback = function()
+        player.Character.Humanoid.WalkSpeed = 500
+  	end    
+})
 
 local Tools = Window:MakeTab({
 	Name = "Tools",
