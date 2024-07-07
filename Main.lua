@@ -88,6 +88,13 @@ Player:AddButton({
   	end    
 })
 
+Player:AddButton({
+	Name = "Low Gravity",
+	Callback = function()
+        game.Workspace.Gravity = 10
+  	end    
+})
+
 local Tools = Window:MakeTab({
 	Name = "Tools",
 	Icon = "rbxassetid://18380872766",
