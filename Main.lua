@@ -80,6 +80,7 @@ while true do
     if PlayerGrinder == true then
         print(PlayerTarget)
     end
+    wait(0.1)
 end
 
 local SwordGiver = Window:MakeTab({
