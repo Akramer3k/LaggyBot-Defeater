@@ -77,7 +77,7 @@ Grinder:AddToggle({
 })
 
 while  true do
-    if toggle == true then
+    if Toggle == true then
         print(PlayerTarget)
     end
 end
