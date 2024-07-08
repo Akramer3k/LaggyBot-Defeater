@@ -57,7 +57,7 @@ Teleports:AddButton({
 	Name = "Medkit3",
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-		local location = CFrame.new(110,-86,-19)
+		local location = CFrame.new(110,-86,-28)
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
 		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		wait(0.1)
@@ -69,7 +69,7 @@ Teleports:AddButton({
 	Name = "Medkit4",
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
-		local location = CFrame.new(110,-86,-28)
+		local location = CFrame.new(110,-86,-29)
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
 		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		wait(0.1)
@@ -166,6 +166,13 @@ Player:AddButton({
 	Name = "Low Gravity",
 	Callback = function()
         game.Workspace.Gravity = 10
+  	end    
+})
+
+Player:AddButton({
+	Name = "Normal Gravity",
+	Callback = function()
+        game.Workspace.Gravity = 120
   	end    
 })
 
