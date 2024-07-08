@@ -238,18 +238,42 @@ local Section = SwordGiver:AddSection({
 SwordGiver:AddButton({
 	Name = "AdminSword",
 	Callback = function()
-		local Clone = game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
-		local player = game.Players:GetPlayerByName("foot_az")
-		if player then
-			local character = player.Character or player.CharacterAdded:Wait()
-			local backpack = player.Backpack
-			Clone.Parent = backpack
-		end
+		local Clone=game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
+		local player=game.Players.LocalPlayer
+		local character=player.Character or player.CharacterAdded:Wait()
+		local backpack=player.Backpack
+		Clone.Parent=backpack
   	end    
 })
 
 local Section = SwordGiver:AddSection({
 	Name = "Normal"
+})
+
+local Section = SwordGiver:AddSection({
+	Name = "Unreleased"
+})
+
+SwordGiver:AddButton({
+	Name = "All-Seeing-Eye-Sword",
+	Callback = function()
+		local Clone=game.ReplicatedStorage.Tools.Swords.Unreleased["All-Seeing-Eye-Sword"]
+		local player=game.Players.LocalPlayer
+		local character=player.Character or player.CharacterAdded:Wait()
+		local backpack=player.Backpack
+		Clone.Parent=backpack
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Gem-Breaker-Sword",
+	Callback = function()
+		local Clone=game.ReplicatedStorage.Tools.Swords.Unreleased["Gem-Breaker-Sword"]
+		local player=game.Players.LocalPlayer
+		local character=player.Character or player.CharacterAdded:Wait()
+		local backpack=player.Backpack
+		Clone.Parent=backpack
+  	end    
 })
 
 local Player = Window:MakeTab({
