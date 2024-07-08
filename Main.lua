@@ -232,22 +232,52 @@ local SwordGiver = Window:MakeTab({
 })
 
 local Section = SwordGiver:AddSection({
+	Name = "Swords(Broken)"
+})
+
+local Section = SwordGiver:AddSection({
 	Name = "Admin"
 })
 
 SwordGiver:AddButton({
 	Name = "AdminSword",
 	Callback = function()
+		--[[
 		local Clone=game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
 		local player=game.Players.LocalPlayer
 		local character=player.Character or player.CharacterAdded:Wait()
 		local backpack=player.Backpack
 		Clone.Parent=backpack
+		]]
   	end    
 })
 
 local Section = SwordGiver:AddSection({
 	Name = "Normal"
+})
+
+SwordGiver:AddButton({
+	Name = "Beta-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Boxed-Up-Blade-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Classic-Blade-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "FishBlade",
+	Callback = function()
+  	end    
 })
 
 local Section = SwordGiver:AddSection({
@@ -257,22 +287,48 @@ local Section = SwordGiver:AddSection({
 SwordGiver:AddButton({
 	Name = "All-Seeing-Eye-Sword",
 	Callback = function()
-		local Clone=game.ReplicatedStorage.Tools.Swords.Unreleased["All-Seeing-Eye-Sword"]
-		local player=game.Players.LocalPlayer
-		local character=player.Character or player.CharacterAdded:Wait()
-		local backpack=player.Backpack
-		Clone.Parent=backpack
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Checker-Battle-Sword",
+	Callback = function()
   	end    
 })
 
 SwordGiver:AddButton({
 	Name = "Gem-Breaker-Sword",
 	Callback = function()
-		local Clone=game.ReplicatedStorage.Tools.Swords.Unreleased["Gem-Breaker-Sword"]
-		local player=game.Players.LocalPlayer
-		local character=player.Character or player.CharacterAdded:Wait()
-		local backpack=player.Backpack
-		Clone.Parent=backpack
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Pixel-Explosion-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Pixel-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Posion-Pixel-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Radio-Master-Sword",
+	Callback = function()
+  	end    
+})
+
+SwordGiver:AddButton({
+	Name = "Stone-Breaker-Sword",
+	Callback = function()
   	end    
 })
 
