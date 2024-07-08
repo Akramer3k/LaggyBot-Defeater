@@ -12,7 +12,7 @@ local Security = Window:MakeTab({
 Security:AddButton({
 	Name = "CheckPlayer",
 	Callback = function()
-        if LocalPlayer == "akramer2k" or "foot_az" then
+        if player == "akramer2k" or "foot_az" then
 
             local Section = Games:AddSection({
                 Name = "Games"
