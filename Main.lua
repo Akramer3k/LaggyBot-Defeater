@@ -174,6 +174,18 @@ Teleports:AddButton({
 })
 
 Teleports:AddButton({
+	Name = "Crystals",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(113,-86,13)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+Teleports:AddButton({
 	Name = "Jail Cage",
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
