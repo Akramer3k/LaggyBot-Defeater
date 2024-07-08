@@ -26,7 +26,7 @@ Teleports:AddButton({
 })
 
 local Section = Teleports:AddSection({
-	Name = "Medkits(May Detect In Anticheet)"
+	Name = "Medkits"
 })
 
 Teleports:AddButton({
@@ -70,6 +70,58 @@ Teleports:AddButton({
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
 		local location = CFrame.new(110,-86,19)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+local Section = Teleports:AddSection({
+	Name = "SpawnPoints"
+})
+
+Teleports:AddButton({
+	Name = "Spawn1",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(96.8, -89.333, 78.3)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Spawn2",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-96.6, -89.333, 78.4)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Spawn3",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-96.5, -89.333, -78.3)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+Teleports:AddButton({
+	Name = "Spawn4",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(96.8, -89.333, -78.3)
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
 		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		wait(0.1)
