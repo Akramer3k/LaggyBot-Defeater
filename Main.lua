@@ -26,7 +26,7 @@ Teleports:AddButton({
 })
 
 local Section = Teleports:AddSection({
-	Name = "Medkits"
+	Name = "Medkits(May Detect In Anticheet)"
 })
 
 Teleports:AddButton({
