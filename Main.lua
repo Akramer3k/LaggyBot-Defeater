@@ -17,6 +17,14 @@ local Teleports = Window:MakeTab({
 	PremiumOnly = false
 })
 
+Teleports:AddButton({
+	Name = "GetPlayerPos",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		print(pl.CFrame)
+  	end    
+})
+
 local Section = Teleports:AddSection({
 	Name = "Medkits"
 })
@@ -24,14 +32,24 @@ local Section = Teleports:AddSection({
 Teleports:AddButton({
 	Name = "Medkit1",
 	Callback = function()
-
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-110,-86,18)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
   	end    
 })
 
 Teleports:AddButton({
 	Name = "Medkit2",
 	Callback = function()
-
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-110,-86,-28)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
   	end    
 })
 
@@ -46,6 +64,31 @@ Teleports:AddButton({
 	Name = "Medkit4",
 	Callback = function()
 
+  	end    
+})
+
+local Section = Teleports:AddSection({
+	Name = "Players(Coming Soon)"
+})
+
+Teleports:AddTextbox({
+	Name = "PlayerName",
+	Default = "LaggyBott",
+	TextDisappear = true,
+	Callback = function(Value)
+		local Player2Teleport = Value
+	end	  
+})
+
+Teleports:AddButton({
+	Name = "TpToPlayer",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		
+		pl.CFrame = game.Players[Player2Teleport].Character.HumanoidRootPart.CFrame
   	end    
 })
 
