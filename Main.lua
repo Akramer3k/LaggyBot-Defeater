@@ -34,7 +34,8 @@ Security:AddButton({
                     loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
                   end    
             })
-
+        else
+            
         end
   	end    
 })
