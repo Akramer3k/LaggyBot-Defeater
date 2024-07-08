@@ -231,7 +231,7 @@ local SwordGiver = Window:MakeTab({
 	PremiumOnly = false
 })
 
-local Section = Tools:AddSection({
+local Section = SwordGiver:AddSection({
 	Name = "Admin"
 })
 
@@ -246,7 +246,7 @@ SwordGiver:AddButton({
   	end    
 })
 
-local Section = Tools:AddSection({
+local Section = SwordGiver:AddSection({
 	Name = "Normal"
 })
 
