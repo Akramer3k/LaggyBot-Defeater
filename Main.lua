@@ -134,6 +134,22 @@ Teleports:AddButton({
 })
 
 local Section = Teleports:AddSection({
+	Name = "Others"
+})
+
+Teleports:AddButton({
+	Name = "Secret Area",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(134.2, -139.612, -19.65)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+local Section = Teleports:AddSection({
 	Name = "Players(Coming Soon)"
 })
 
