@@ -13,7 +13,7 @@ Security:AddButton({
 	Name = "CheckPlayer",
 	Callback = function()
         if player.Name == "akramer2k" or "foot_az" then
-
+            print("Security Accepted")  
             loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
         
         else
