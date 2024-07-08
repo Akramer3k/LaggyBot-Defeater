@@ -23,7 +23,7 @@ Security:AddButton({
             Games:AddButton({
                 Name = "SwordsDismissed",
                 Callback = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed", true))()
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
                     OrionLib:Init()
                 end    
             })
