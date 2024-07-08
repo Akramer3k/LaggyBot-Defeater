@@ -2,11 +2,11 @@
 local player = game.Players.LocalPlayer
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "LaggyBot Defeater", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "SwordsDismissed", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 OrionLib:MakeNotification({
 	Name = "LaggyBot Defeater",
-	Content = "Loading Swords Dismissed Gui.",
+	Content = "SwordsDismissed Detected",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })

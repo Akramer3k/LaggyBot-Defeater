@@ -13,9 +13,19 @@ Security:AddButton({
 	Name = "CheckPlayer",
 	Callback = function()
         if player.Name == "akramer2k" or "foot_az" then
-            print("Security Accepted")  
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
-            OrionLib:Destroy()
+
+            local Games = Window:MakeTab({
+                Name = "Games",
+                Icon = "rbxassetid://18380831175",
+                PremiumOnly = false
+            })
+
+            Games:AddButton({
+                Name = "SwordsDismissed",
+                Callback = function()
+                  end    
+            })
+
         else
             warn("Security NOT Accepted")    
         end
