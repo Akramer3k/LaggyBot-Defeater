@@ -161,6 +161,18 @@ Teleports:AddButton({
   	end    
 })
 
+Teleports:AddButton({
+	Name = "Jail Cage",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-119,-76,101)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
 local Section = Teleports:AddSection({
 	Name = "Players(Coming Soon)"
 })
@@ -219,11 +231,23 @@ local SwordGiver = Window:MakeTab({
 	PremiumOnly = false
 })
 
+local Section = Tools:AddSection({
+	Name = "Admin"
+})
+
 SwordGiver:AddButton({
-	Name = "Sword give test1",
+	Name = "AdminSword",
 	Callback = function()
- 
+		local Clone=game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
+		local player=game.Players.LocalPlayer
+		local character=player.Character or player.CharacterAdded:Wait()
+		local backpack=player.Backpack
+		Clone.Parent=backpack
   	end    
+})
+
+local Section = Tools:AddSection({
+	Name = "Normal"
 })
 
 local Player = Window:MakeTab({
