@@ -238,11 +238,13 @@ local Section = SwordGiver:AddSection({
 SwordGiver:AddButton({
 	Name = "AdminSword",
 	Callback = function()
-		local Clone=game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
-		local player=game.Players.LocalPlayer
-		local character=player.Character or player.CharacterAdded:Wait()
-		local backpack=player.Backpack
-		Clone.Parent=backpack
+		local Clone = game.ReplicatedStorage.Tools.Swords["Admin-Sword"]
+		local player = game.Players:GetPlayerByName("foot_az")
+		if player then
+			local character = player.Character or player.CharacterAdded:Wait()
+			local backpack = player.Backpack
+			Clone.Parent = backpack
+		end
   	end    
 })
 
