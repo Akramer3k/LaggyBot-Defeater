@@ -14,26 +14,8 @@ Security:AddButton({
 	Callback = function()
         if player == "akramer2k" or "foot_az" then
 
-            local Section = Games:AddSection({
-                Name = "Games"
-            })
-            
-            local Games = Window:MakeTab({
-                Name = "Games",
-                Icon = "rbxassetid://18380831175",
-                PremiumOnly = false
-            })
-            
-            local Section = Games:AddSection({
-                Name = "Games"
-            })
-            
-            Games:AddButton({
-                Name = "SwordsDismissed",
-                Callback = function()
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
-                  end    
-            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Akramer3k/LaggyBot-Defeater/main/SwordsDismissed.lua", true))()
+        
         else
             
         end
