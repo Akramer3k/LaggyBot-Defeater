@@ -150,6 +150,18 @@ Teleports:AddButton({
 })
 
 Teleports:AddButton({
+	Name = "Shop",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(-29,-86,75)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
+Teleports:AddButton({
 	Name = "Boss entrance",
 	Callback = function()
 		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
