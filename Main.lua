@@ -149,6 +149,18 @@ Teleports:AddButton({
   	end    
 })
 
+Teleports:AddButton({
+	Name = "Boss entrance",
+	Callback = function()
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(1,-84,-88)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
+  	end    
+})
+
 local Section = Teleports:AddSection({
 	Name = "Players(Coming Soon)"
 })
