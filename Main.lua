@@ -56,14 +56,24 @@ Teleports:AddButton({
 Teleports:AddButton({
 	Name = "Medkit3",
 	Callback = function()
-
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(110,-86,-18)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
   	end    
 })
 
 Teleports:AddButton({
 	Name = "Medkit4",
 	Callback = function()
-
+		local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+		local location = CFrame.new(110,-86,-28)
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+		wait(0.1)
+		pl.CFrame = location
   	end    
 })
 
